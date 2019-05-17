@@ -14,6 +14,7 @@ body {
   height: 100%;
   box-sizing: border-box;
   padding-top: 8%;
+  font-family: "Roboto", sans-serif;
 }
 
 div.container {
@@ -44,13 +45,9 @@ div.details-container > button {
   border: none;
   border-radius: 20px;
 }
-div.round {
-  width: 8%;
-  background-color: white;
-  border-radius: 50% 0 0 50%;
-  height: 432px;
-}
+
 div.form-container {
+  box-sizing: border-box;
   width: 50%;
   /* padding-left: 1.5rem; */
   text-align: left;
@@ -59,6 +56,12 @@ div.form-container {
   border-bottom-right-radius: 0; */
   background-color: white;
   line-height: 3rem;
+}
+div.round {
+  width: 8%;
+  background-color: white;
+  border-radius: 50% 0 0 50%;
+  height: 432px;
 }
 
 div.form-container > div.title {
@@ -93,8 +96,10 @@ form.register > input[type="submit"] {
   border: none;
   border-radius: 20px;
 }
-
-@media all and (max-width: 600px) {
+div.title > h1 {
+  font-weight: 300;
+}
+@media all and (max-width: 655px) {
   div.container {
     width: 100%;
     display: flex;
@@ -134,8 +139,8 @@ form.register > input[type="submit"] {
   }
 }
 
-@media all and (min-width: 601px) and (max-width: 800px) {
+/* @media all and (min-width: 601px) and (max-width: 800px) {
   div.round {
     height: 480px;
   }
-}
+} */
