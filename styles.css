@@ -99,7 +99,7 @@ form.register > input[type="submit"] {
 div.title > h1 {
   font-weight: 300;
 }
-@media all and (max-width: 655px) {
+@media all and (max-width: 665px) {
   div.container {
     width: 100%;
     display: flex;
@@ -140,8 +140,13 @@ div.title > h1 {
   }
 }
 
-@media all and (min-width: 601px) and (max-width: 800px) {
+@media all and (min-width: 601px) and (max-width: 654px) {
   div.round {
     height: 480px;
+  }
+}
+@media all and (min-width: 655px) and (max-width: 720px;) {
+  div.round {
+    height: 432px;
   }
 }
