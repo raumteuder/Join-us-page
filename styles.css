@@ -1,5 +1,5 @@
 :root {
-  --bg-gradient: linear-gradient(to right, #fc4a1a, #f7b733);
+  --bg-gradient: linear-gradient(to right, #ed6437, #f19938);
 }
 * {
   margin: 0;
@@ -13,7 +13,7 @@ body {
   background: var(--bg-gradient);
   height: 100%;
   box-sizing: border-box;
-  padding-top: 10%;
+  padding-top: 8%;
 }
 
 div.container {
@@ -44,21 +44,29 @@ div.details-container > button {
   border: none;
   border-radius: 20px;
 }
-
+div.round {
+  width: 8%;
+  background-color: white;
+  border-radius: 50% 0 0 50%;
+  height: 432px;
+}
 div.form-container {
   width: 50%;
-  padding-left: 1.5rem;
-  text-align: center;
-  border-radius: 20% 0 0 20%;
+  /* padding-left: 1.5rem; */
+  text-align: left;
+  /* border-radius: 30%;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0; */
   background-color: white;
   line-height: 3rem;
 }
 
 div.form-container > div.title {
-  margin: 3rem 0 2.5rem 0;
+  margin: 3rem 4rem 2.5rem 0;
+  text-align: center;
 }
 form.register > input:not(:last-child) {
-  width: 80%;
+  width: 85%;
   height: 2rem;
   border-radius: 1px;
 }
@@ -80,8 +88,54 @@ form.register > input[type="submit"] {
   float: right;
   margin-right: 3rem;
   color: white;
-  background: var(--bg-gradient);
+  background: #f19b38;
   height: 2rem;
   border: none;
   border-radius: 20px;
+}
+
+@media all and (max-width: 600px) {
+  div.container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  div.form-container {
+    width: 80%;
+    margin-top: 50px;
+  }
+  div.details-container {
+    margin: 0;
+    padding: 0 10px;
+    width: 90%;
+  }
+  div.details-container > h1 {
+    margin-top: 0;
+    margin-right: 0;
+    padding: 0;
+    margin-bottom: 7%;
+  }
+
+  div.details-container > p {
+    padding: 1rem 0;
+  }
+  div.round {
+    display: none;
+  }
+  form.register {
+    text-align: center;
+  }
+  div.form-container > div.title {
+    margin-right: 0;
+    text-align: center;
+  }
+  form.register > input[type="submit"] {
+    float: none;
+  }
+}
+
+@media all and (min-width: 601px) and (max-width: 800px) {
+  div.round {
+    height: 480px;
+  }
 }
