@@ -108,6 +108,7 @@ div.title > h1 {
   div.form-container {
     width: 80%;
     margin-top: 50px;
+    border-radius: 10% 0 10% 0;
   }
   div.details-container {
     margin: 0;
@@ -139,8 +140,8 @@ div.title > h1 {
   }
 }
 
-/* @media all and (min-width: 601px) and (max-width: 800px) {
+@media all and (min-width: 601px) and (max-width: 800px) {
   div.round {
     height: 480px;
   }
-} */
+}
