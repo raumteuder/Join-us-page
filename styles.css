@@ -150,3 +150,12 @@ div.title > h1 {
     height: 432px;
   }
 }
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  /* CSS Statements that only apply on webkit-based browsers (Chrome, Safari, etc.) */
+  div.details-container > button,
+  form.register > input[type="submit"] {
+    padding: 0.9rem 1.8rem 1.8rem 1.8rem;
+    font-size: 0.86rem;
+  }
+}
