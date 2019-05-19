@@ -158,4 +158,7 @@ div.title > h1 {
     padding: 0.9rem 1.8rem 1.8rem 1.8rem;
     font-size: 0.86rem;
   }
+  div.round {
+    height: 434px;
+  }
 }
