@@ -36,7 +36,7 @@ div.details-container {
 div.details-container > h1 {
   font-size: 5rem;
   transform: rotate(90deg) scale(1.2, 1.5);
-  padding-right: 6rem;
+  padding-right: 4rem;
 }
 
 div.details-container > button {
